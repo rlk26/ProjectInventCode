@@ -7,13 +7,17 @@ int motorPin = 3; //motor transistor is connected to pin 3
 
 void setup()
 {
+   Serial.begin(9600);
   pinMode(motorPin, OUTPUT);
+  Serial.println("SARAH");
+  digitalWrite(motorPin, HIGH);
 }
 
 void loop()
 {
-  digitalWrite(motorPin, HIGH); //vibrate
-  delay(10);  // delay one second
-  digitalWrite(motorPin, LOW);  //stop vibrating
-  delay(10); //wait 50 seconds.
+  //digitalWrite(motorPin, HIGH); //vibrate
+  Serial.println("HELLO");
+ 
+  
+  Serial.println("RAMYA FIXES ALL OF SARAHS ERRORS");
 }
