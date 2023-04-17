@@ -1,4 +1,4 @@
-int motorPin = 2;
+int motorPin = 3;
 
 void setup()
 {
@@ -7,8 +7,10 @@ void setup()
 
 void loop()
 {
-  digitalWrite(motorPin, HIGH); //vibrate
+  //digitalWrite(motorPin, HIGH); //vibrate
+  analogWrite(motorPin, 255);
   delay(1000);  // delay one second
-  digitalWrite(motorPin, LOW);  //stop vibrating
+  //digitalWrite(motorPin, LOW);  //stop vibrating
+  analogWrite(motorPin, 0);
   delay(1000); //wait one second.
 }
